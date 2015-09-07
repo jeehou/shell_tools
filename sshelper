@@ -1,0 +1,7 @@
+#!/bin/sh
+if [[ $@ == *"10.1."* ]]
+then
+    ssh -p 36000 $@
+else
+    ssh $@
+fi
